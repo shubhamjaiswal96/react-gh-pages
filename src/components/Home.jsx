@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import CounterContainer from "../redux/CounterContainer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,6 +16,11 @@ const Home = () => {
         <button type="button" className="btn btn-warning" onClick={() => navigate('/new_product')}>
           Add New Product
         </button>
+      </div>
+      <br />
+      <br />
+      <div className="App">
+        <CounterContainer />
       </div>
     </div>
   )
